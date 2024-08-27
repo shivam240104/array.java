@@ -2,17 +2,21 @@ import java.util.*;
 
 public class Array {
 
+    public static void update(int marks[]){
+        for(int i=0;i<marks.length;i++){
+            marks[i]=marks[i]+1;
+        }
+    }
+
     public static void main(String[] args) {
-        int marks[]=new int[100];
-        System.out.println("Enter marks -");
-        Scanner sc = new Scanner(System.in);
-        marks[0]=sc.nextInt(); //math
-        marks[1]=sc.nextInt(); //phy
-        marks[2]=sc.nextInt(); //chem
-        
-        System.out.println("math =" +marks[0]);
-        System.out.println("phy =" +marks[0]);
-        System.out.println("chem =" +marks[0]);
-          System.out.println("array length =" +marks.length);
+       
+
+        int marks[]={98,96,97};
+        update(marks);
+        //print out marks
+        for(int i=0;i<marks.length;i++){
+            System.out.print(marks[i]+" ");
+        }
+        System.out.println();
     }
 }
