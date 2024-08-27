@@ -13,6 +13,6 @@ public class Array {
         System.out.println("math =" +marks[0]);
         System.out.println("phy =" +marks[0]);
         System.out.println("chem =" +marks[0]);
-
+          System.out.println("array length =" +marks.length);
     }
 }
